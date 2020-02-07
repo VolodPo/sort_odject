@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sorter</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+
+		//Відсортувати в порядку збільшення числа
+		var arr=[8, 5, 11, 7, 3, 1];
+	console.log(arr);
+		function sorter(array){
+			for (var f = 0; f < arr.length; f++) {
+				for (var i = 0; i < arr.length; i++) {
+					if (arr[i] > arr[i + 1]) {
+						var temp = arr[i];
+						arr[i] = arr[i + 1];
+						arr[i + 1] = temp;
+					}
+				}
+			}
+		}
+		sorter(arr)
+		console.log(arr);	
+
+	</script>
+</body>
+</html>
